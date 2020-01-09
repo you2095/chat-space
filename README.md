@@ -17,7 +17,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, unique:true|
+|group_name|string|null: false, unique:true|
+|member_addition|string|null:false|
 
 ### Association
 - has_many :users, through: :groups_users
@@ -28,10 +29,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|
-|user_id|integer|null: false, foreign_key:true|
-|group_id|integer|null: false, foreign_key:true|
+|text|text|null: false|
+|image|integer|
 
 ### Association
 - belong_to :user
