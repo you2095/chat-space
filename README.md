@@ -46,3 +46,4 @@
 ### Association
 - belong_to :group
 - belong_to :user
+
