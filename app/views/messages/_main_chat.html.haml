@@ -1,0 +1,29 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__group-name
+        group-name
+      .main-header__left-box__group-member
+        member:you
+    .main-header__edit-btn
+      = link_to "#" do
+        Edit
+  .messages
+    .message
+      %p.message__upper-massage
+        %p.message__upper-message__user-name
+          you
+        %p.message__upper-message__date
+          2020/01/14(tue) 17:48
+      %p.message__lower-message
+        %p.message__lower-message__content
+          おはよう！
+
+  .chat-form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
