@@ -4,6 +4,7 @@
 @import "./colors";
 @import "./messages";
 @import "./chat-main";
-@import "./side-ber";
-@import "./user";
-@import "./flash";
+@import "./side-bar";
+@import "modules/user";
+@import "modules/flash";
+@import "modules/group";

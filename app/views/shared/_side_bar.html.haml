@@ -1,23 +1,21 @@
-.side-ber
+.side-bar
   .side-header
     .side-header__box
       %p.side-header__box__username
         = current_user.name
       %ul.side-header__box__menu
         %li.side-header__box__new-group
-          =link_to "#" do
-            = icon('fas', 'edit')
+          = link_to new_group_path do
+            = icon('fas', 'pen-square', class: 'icon')
         %li.side-header__box__edit-user
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
 
   .groups
-    = link_to "#", class:"group" do
-      %p.group__name
-        test
-      %p.group__message
-        まだメッセージがありません
-      %p.group__name
-        test2
-      %p.group__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to "#", class:"group" do
+          .group__name
+            = group.name
+          .group__message
+            まだメッセージがありません
