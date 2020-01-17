@@ -1,25 +1,22 @@
 .chat-main {
-  height: 100vh;
   width: calc(100vw - 300px);
-  background-color:#ffffff;
   float: left;
-
   .main-header {
     height: 100px;
-    background-color: white;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 1px #eee;
 
 
     &__left-box {
       margin-top: 35px;
-        &__group-name {
+        &__current-group {
           color: #333333;
           font-size: 20px;
           margin-bottom: 15px;
         }
-        &__group-member {
+        &__member-list {
           color: #999999;
           font-size: 12px;
           display: flex;

@@ -1,13 +1,13 @@
-.side-ber {
+.side-bar {
   height: 100vh;
   width: 300px;
-  background-color: #253141;
   float: left;
 
   .side-header {
     height: 100px;
     padding: 0 20px;
     font-size: 16px;
+    background-color: #253141;
     color: white;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@
     }
   }
 
-   .groups {
+  .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px;
