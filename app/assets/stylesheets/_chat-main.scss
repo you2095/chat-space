@@ -49,8 +49,9 @@
     box-sizing: border-box;
     padding: 46px 40px;
     height: calc(100vh - 100px - 90px);
+    overflow: scroll;
     img {
-      max-width: 10%;
+      max-width:  15%;
      }
     .message {
       padding: 0 0 40px;
